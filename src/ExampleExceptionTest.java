@@ -52,6 +52,7 @@ public class ExampleExceptionTest {
 
         try {
             ExampleException.rectangleArea(a, b);
+            fail("Expected an IllegalArgumentException to be thrown");
         } catch (IllegalArgumentException e) {
             assertEquals(e.getMessage(), "input value is below zero!");
         }
