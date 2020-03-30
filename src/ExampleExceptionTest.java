@@ -48,7 +48,7 @@ public class ExampleExceptionTest {
 
 
     @Test(dataProvider = "negativeData")
-    public void testRectangleAreaNegative(int a, int b) {
+    public void testRectangleAreaNegative(int a, int b) throws IllegalArgumentException{
 
         try {
             ExampleException.rectangleArea(a, b);
